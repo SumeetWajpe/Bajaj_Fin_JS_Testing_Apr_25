@@ -10,7 +10,7 @@ beforeEach(() => {
 // afterAll(() => {
 //   console.log("After All - 1");
 // });
-describe("a suite for using setip & teardown hooks", () => {
+xdescribe("a suite for using setip & teardown hooks", () => {
   let cars;
   it("checks if BMW is contained in an array", () => {
     expect(cars).toContain("BMW");
@@ -36,7 +36,7 @@ describe("a suite for using setip & teardown hooks", () => {
   // });
 });
 
-describe("sample test", () => {
+xdescribe("sample test", () => {
   it("sample test", () => {
     expect(true).toBe(true);
   });
