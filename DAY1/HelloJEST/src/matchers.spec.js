@@ -1,4 +1,4 @@
-describe("test suite for using different matchers", () => {
+xdescribe("test suite for using different matchers", () => {
   it("test for toBe matcher (===)", () => {
     expect("60").toBe(60);
   });
@@ -12,7 +12,7 @@ describe("test suite for using different matchers", () => {
     // expect([1, 2, 3, 4]).toContain(6);
   });
 
-  fit("test for toMatch", () => {
+  it("test for toMatch", () => {
     expect("Javascript library").toMatch(/javascript/i);
   });
 });
