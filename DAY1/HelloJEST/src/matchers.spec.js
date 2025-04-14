@@ -1,4 +1,4 @@
-xdescribe("test suite for using different matchers", () => {
+describe("test suite for using different matchers", () => {
   it("test for toBe matcher (===)", () => {
     expect("60").toBe(60);
   });
@@ -14,5 +14,11 @@ xdescribe("test suite for using different matchers", () => {
 
   it("test for toMatch", () => {
     expect("Javascript library").toMatch(/javascript/i);
+  });
+  it("test for toCloseTo", () => {
+    expect(3).toBeCloseTo(2.9999999);
+  });
+  fit("test for toNothing", () => {
+    expect(3).toBeCloseTo(2.9999999);
   });
 });

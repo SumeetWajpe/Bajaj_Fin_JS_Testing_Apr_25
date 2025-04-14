@@ -9,14 +9,14 @@ xdescribe("test suite for addition of two entities", () => {
     // Assert
     expect(result).toBe(30);
   });
-  it("should test addition of two strings", () => {
-    // Arrange
-    let result;
-    // Act
-    result = Add("Hello", "JEST");
-    // Assert
-    expect(result).toBe("HelloJEST");
-  });
+  //   it("should test addition of two strings", () => {
+  //     // Arrange
+  //     let result;
+  //     // Act
+  //     result = Add("Hello", "JEST");
+  //     // Assert
+  //     expect(result).toBe("HelloJEST");
+  //   });
 });
 
 // fdescribe("just another suite", () => {
