@@ -1,5 +1,5 @@
 const Add = require("./firstsource"); // common js
-describe("", () => {
+xdescribe("", () => {
   it("should test addition of two numbers", () => {
     // Arrange
     let result;

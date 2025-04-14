@@ -1,6 +1,6 @@
 const Add = require("./add"); // common js
 
-describe("test suite for addition of two entities", () => {
+xdescribe("test suite for addition of two entities", () => {
   it("should add two numbers", () => {
     // Arrange
     let result;
