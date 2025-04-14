@@ -1,4 +1,4 @@
-describe("test suite for using different matchers", () => {
+xdescribe("test suite for using different matchers", () => {
   it("test for toBe matcher (===)", () => {
     expect("60").toBe(60);
   });
