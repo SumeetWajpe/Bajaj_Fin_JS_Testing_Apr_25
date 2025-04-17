@@ -1,4 +1,6 @@
 /// <reference types="Cypress" />
+import loginPage from "../pages/loginPage";
+
 describe("test suite for lambdatest.io", () => {
   before(function () {
     cy.fixture("login").as("loginData");
@@ -12,10 +14,9 @@ describe("test suite for lambdatest.io", () => {
     cy.visit(
       "https://ecommerce-playground.lambdatest.io/index.php?route=account/login",
     );
-    cy.log(this.loginData);
-    cy.get("#input-email").type(this.loginData.name);
-    cy.get("#input-password").type(this.loginData.pwd);
-    cy.get("form > .btn").click();
+    //cy.log(this.loginData);
+
+    loginPage.login(this.loginData.name, this.loginData.pwd); // comes from loginPage.js
     cy.url().should(
       "eq",
       "https://ecommerce-playground.lambdatest.io/index.php?route=account/account",
