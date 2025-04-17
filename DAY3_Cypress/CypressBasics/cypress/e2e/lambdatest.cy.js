@@ -7,14 +7,13 @@ describe("test suite for lambdatest.io", () => {
 
     cy.fixture("login").then(data => {
       cy.log(data);
+      cy.get("#input-email").type(data.name);
+      cy.get("#input-password").type(data.pwd);
+      cy.get("form > .btn").click();
+      cy.url().should(
+        "eq",
+        "https://ecommerce-playground.lambdatest.io/index.php?route=account/account",
+      );
     });
-
-    //     cy.get("#input-email").type("");
-    //     cy.get("#input-password").type("admin@1");
-    //     cy.get("form > .btn").click();
-    //     cy.url().should(
-    //       "eq",
-    //       "https://ecommerce-playground.lambdatest.io/index.php?route=account/account",
-    //     );
   });
 });
