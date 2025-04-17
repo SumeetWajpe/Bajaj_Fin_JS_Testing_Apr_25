@@ -1,9 +1,11 @@
 /// <reference types="Cypress" />
 describe("test suite for lambdatest.io", () => {
   before(function () {
-    cy.fixture("login").then(function (data) {
-      this.loginData = data;
-    });
+    cy.fixture("login").as("loginData");
+
+    // cy.fixture("login").then(function (data) {
+    //   this.loginData = data;
+    // });
   });
 
   it("should login successfully", function () {
